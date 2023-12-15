@@ -76,8 +76,7 @@ h2 {
 
 .michelle {
     display: grid;
-    grid-template-columns: 15% 70% 0%;
-    /* grid-column-gap: 10px; */
+    grid-template-columns: 15% 65% 0%;
 }
 
 .together {
@@ -99,13 +98,26 @@ h2 {
 }
 
 .arrow {
-    display: grid;
-    place-content: center;
+    /* display: grid;
+    place-content: center; */
+    cursor: pointer;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.35rem;
+    border: none;
+}
+
+.arrow:hover {
+    background-color: var(--light-grayish-blue);
 }
 
 .arrow img {
     width: 25px;
-    cursor: pointer;
+}
+
+.toggle-card {
+    background-color: black;
 }
 
 .hidden {
