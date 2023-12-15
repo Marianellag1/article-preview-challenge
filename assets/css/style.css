@@ -75,15 +75,16 @@ h2 {
 }
 
 .michelle {
-    display: grid;
-    grid-template-columns: 15% 65% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.together {
+/* .together {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .together p {
     color: var(--grayish-blue);
@@ -117,7 +118,12 @@ h2 {
 }
 
 .toggle-card {
-    background-color: black;
+    position: relative;
+}
+
+.social-icons {
+    position: absolute;
+    z-index: 2;
 }
 
 .hidden {
