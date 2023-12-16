@@ -77,6 +77,7 @@ h2 {
 }
 
 .michelle {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,8 +101,41 @@ h2 {
 
 }
 
+.toggle-card {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.share-box {
+    position: absolute;
+    display: flex;
+    gap: 15px;
+    right: -47px;
+    top: -70px;
+    padding: .50rem 2rem;
+    border-radius: 16px;
+    background-color: var(--very-dark-grayish-blue);
+    align-items: center;
+}
+
+.share-box p {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
+}
+
+.social-icons img {
+    background-color: var(--very-dark-grayish-blue);
+    width: 20px;
+}
+
+.social-icons a {
+    cursor: pointer;
+    margin: 0 .25rem;
+    border: none;
+    background-color: var(--very-dark-grayish-blue);
+}
+
 .arrow {
-    position: relative;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
@@ -109,20 +143,8 @@ h2 {
     border: none;
 }
 
-.arrow::after {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-button {
-    cursor: pointer;
-}
-
 .arrow img {
+    cursor: pointer;
     width: 25px;
 }
 
@@ -130,9 +152,6 @@ button {
     display: none;
 }
 
-.share-box {
-    display: flex;
-}
 
 /* .card-share--active {
     background-color: var(--desaturated-dark);
