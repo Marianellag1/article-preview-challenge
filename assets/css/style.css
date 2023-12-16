@@ -110,12 +110,23 @@ h2 {
     display: flex;
     gap: 15px;
     right: -47px;
-    top: -70px;
+    top: -85px;
     padding: .50rem 2rem;
     border-radius: 16px;
     background-color: var(--very-dark-grayish-blue);
     align-items: center;
 }
+
+.share-box:after {
+    content: " ";
+    position: absolute;
+    right: 50px;
+    bottom: -14px;
+    border-top: 15px solid var(--very-dark-grayish-blue);
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: none;
+  }
 
 .share-box p {
     letter-spacing: 5px;
@@ -156,3 +167,5 @@ h2 {
 /* .card-share--active {
     background-color: var(--desaturated-dark);
 } */
+
+/* https://codeconvey.com/css-message-box-with-arrow/ */
