@@ -41,7 +41,7 @@ body {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 820px;
     display: grid;
     grid-template-columns: auto auto;
     background-color: white;
@@ -56,22 +56,24 @@ body {
 }
 
 .words {
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 h1 {
     color: var(--very-dark-grayish-blue);
     font-weight: 700;
+    font-size: 20px;
 }
 
 h2 {
     color: var(--very-dark-grayish-blue);
+    font-size: 13px;
 }
 
 .words p {
     color: var(--desaturated-dark);
     font-weight: 500;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .michelle {
@@ -80,11 +82,11 @@ h2 {
     align-items: center;
 }
 
-/* .together {
+.author {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
+    gap: 15px;
+    align-items: center;
+}
 
 .together p {
     color: var(--grayish-blue);
@@ -94,14 +96,12 @@ h2 {
 .photo {
     margin: 0;
     border-radius: 50%;
-    width: 60px;
+    width: 50px;
 
 }
 
 .arrow {
-    /* display: grid;
-    place-content: center; */
-    cursor: pointer;
+    position: relative;
     border-radius: 50%;
     width: fit-content;
     height: fit-content;
@@ -109,23 +109,31 @@ h2 {
     border: none;
 }
 
-.arrow:hover {
-    background-color: var(--light-grayish-blue);
+.arrow::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+button {
+    cursor: pointer;
 }
 
 .arrow img {
     width: 25px;
 }
 
-.toggle-card {
-    position: relative;
-}
-
-.social-icons {
-    position: absolute;
-    z-index: 2;
-}
-
 .hidden {
     display: none;
 }
+
+.share-box {
+    display: flex;
+}
+
+/* .card-share--active {
+    background-color: var(--desaturated-dark);
+} */
